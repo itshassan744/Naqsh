@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NAQSH - Har Cheez Mein Ek Naqsh Hai</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{font-family:'Inter',sans-serif}
+  body{background:#FBF9F4;color:#1A1A1A;overflow-x:hidden}
+  .marquee{background:#1A1A1A;color:#D4AF37;text-align:center;padding:8px;font-size:12px;letter-spacing:1px;font-weight:700;white-space:nowrap;overflow:hidden}
+  .marquee span{display:inline-block;animation:scroll 18s linear infinite}
+  @keyframes scroll{from{transform:translateX(100%)}to{transform:translateX(-100%)}}
+  .navbar{background:rgba(255,255,255,.95)!important;backdrop-filter:blur(10px);box-shadow:0 2px 15px rgba(0,0,0,.06);position:sticky;top:0;z-index:100}
+  .logo-wrap{display:flex;align-items:center;gap:10px;text-decoration:none}
+  .logo-circle{width:44px;height:44px;background:linear-gradient(135deg,#C9A227,#F5D67A);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:#000;border:2px solid #1A1A1A}
+  .logo-text{font-family:'Playfair Display',serif;font-size:28px;letter-spacing:6px;font-weight:700;color:#1A1A1A}
+  .logo-text span{color:#C9A227}
+  .hero{background:linear-gradient(135deg,#111 0%,#2A2118 50%,#111 100%);color:#fff;border-radius:28px;padding:50px 25px;text-align:center;margin-top:20px}
+  .hero-logo{width:90px;height:90px;background:linear-gradient(135deg,#C9A227,#F5D67A);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:48px;font-weight:700;color:#000;margin:0 auto 15px;border:3px solid #fff}
+  .hero h1{font-family:'Playfair Display',serif;font-size:52px;letter-spacing:8px}
+  .hero h1 span{color:#D4AF37}
+  .btn-gold{background:linear-gradient(90deg,#D4AF37,#F5D67A);color:#000;font-weight:800;border-radius:50px;padding:14px 36px;border:none;letter-spacing:1px}
+  .cat-btn{background:#fff;border:2px solid #1A1A1A;border-radius:50px;padding:8px 18px;font-weight:700;font-size:13px;margin:4px}
+  .cat-btn.active{background:#1A1A1A;color:#fff}
+  .card{border:none;border-radius:24px;overflow:hidden;background:#fff;box-shadow:0 8px 25px rgba(0,0,0,.07);transition:.3s;height:100%}
+  .card:hover{transform:translateY(-8px);box-shadow:0 20px 40px rgba(0,0,0,.13)}
+  .card img{height:260px;object-fit:cover;width:100%;transition:.5s}
+  .card:hover img{transform:scale(1.08)}
+  .price{font-size:22px;font-weight:800}
+  .old-price{text-decoration:line-through;color:#999;font-size:13px}
+  .btn-buy{background:#1A1A1A;color:#fff;font-weight:700;border-radius:50px;padding:13px;width:100%;border:none;font-size:14px;letter-spacing:1.2px}
+  .btn-buy:hover{background:#C9A227;color:#000}
+  .badge-tag{background:#C9A227;color:#000;font-size:11px;padding:6px 12px;border-radius:20px;font-weight:800}
+  .cod-badge{background:#E8F5E9;color:#1B5E20;font-size:12px;font-weight:700;padding:6px 12px;border-radius:20px}
+  .review-box{background:#fff;border-radius:20px;padding:20px;box-shadow:0 5px 15px rgba(0,0,0,.05)}
+  .stars{color:#FFB800;font-size:17px}
+  .float-wa{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;z-index:999;box-shadow:0 8px 20px rgba(0,0,0,.25);text-decoration:none}
+  .footer{background:#111;color:#aaa;text-align:center;padding:35px 15px;border-radius:28px 28px 0 0}
+  .footer b{color:#fff;letter-spacing:6px;font-size:22px;font-family:'Playfair Display',serif}
+</style>
+</head>
+<body>
+
+<div class="marquee"><span>✦ NAQSH - HAR CHEEZ MEIN EK NAQSH HAI &nbsp;&nbsp; ✦ PAYMENT: CASH ON DELIVERY &nbsp;&nbsp; ✦ 9+ PREMIUM PRODUCTS &nbsp;&nbsp; ✦ ORDER ON WHATSAPP &nbsp;&nbsp;</span></div>
+
+<nav class="navbar navbar-expand-lg"><div class="container">
+  <a class="logo-wrap" href="#"><div class="logo-circle">N</div><div class="logo-text">NAQ<span>SH</span></div></a>
+  <a href="#products" class="btn btn-sm btn-dark rounded-pill px-4">SHOP NOW</a>
+</div></nav>
+
+<div class="container">
+  <div class="hero">
+    <div class="hero-logo">N</div>
+    <p style="letter-spacing:3px;font-size:12px;color:#D4AF37;">✦ PREMIUM COLLECTION IN PAKISTAN ✦</p>
+    <h1>NAQ<span>SH</span></h1>
+    <p style="font-size:19px;">Har Cheez Mein Ek Naqsh Hai</p>
+    <p style="color:#bbb;">Watch • Perfume • Earbuds • Shoes • Fashion - Sab Kuch Ek Hi Jagah</p>
+    <a href="#products"><button class="btn-gold mt-2">SHOP NOW ↓</button></a>
+    <p class="mt-3" style="font-size:13px;font-weight:600;">⭐ 4.9 Rating &nbsp; | &nbsp; ✔ 1000+ Happy Customers &nbsp; | &nbsp; 💵 Cash on Delivery</p>
+  </div>
+
+  <div class="text-center mt-4">
+    <span class="cod-badge">💵 PAYMENT: CASH ON DELIVERY</span>
+    <span class="cod-badge" style="margin-left:8px;">🚚 ALL OVER PAKISTAN</span>
+  </div>
+
+  <div class="text-center mt-4" id="products">
+    <button class="cat-btn active">All Products</button>
+    <button class="cat-btn">Watches</button>
+    <button class="cat-btn">Perfume</button>
+    <button class="cat-btn">Fashion</button>
+    <button class="cat-btn">Electronics</button>
+  </div>
+
+  <div class="row g-4 mt-3">
+    <!-- 1 -->
+    <div class="col-md-4"><div class="card"><img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800"><div class="p-4"><span class="badge-tag">★ BEST SELLER</span><span style="float:right;color:green;font-size:12px;font-weight:700;">● In Stock</span><h4 class="mt-2">NAQSH Smart Watch</h4><div class="stars">★★★★★ <span style="color:#777;font-size:12px;">(342)</span></div><p style="font-size:13px;color:#777;">Bluetooth Calling • Health Tracking • 7 Days Battery</p><p><span class="price">Rs 4,499</span> <span class="old-price">Rs 6,999</span></p><p style="font-size:12px;color:#1B5E20;font-weight:600;">💵 Cash on Delivery</p><a href="https://wa.me/923128845987?text=Assalam-o-Alaikum%20NAQSH!%20Mujhe%20Smart%20Watch%20order%20karni%20hai%20-%20Rs%204499%20(COD)" target="_blank" style="text-decoration:none;"><button class="btn-buy">BUY NOW</button></a></div></div></div>
+    <!-- 2 -->
+    <div class="col-md-4"><div class="card"><img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=800"><div class="p-4"><span class="badge-tag">✦ NEW</span><span style="float:right;color:green;font-size:12px;font-weight:700;">● In Stock</span><h4 class="mt-2">NAQSH Perfume</h4><div class="stars">★★★★★ <span style="color:#777;font-size:12px;">(218)</span></div><p style="font-size:13px;color:#777;">Long Lasting 12 Hours • Premium Fragrance • Gift Box</p><p><span class="price">Rs 2,999</span> <span class="old-price">Rs 4,500</span></p><p style="font-size:12px;color:#1B5E20;font-weight:600;">💵 Cash on Delivery</p><a href="https://wa.me/923128845987?text=Assalam-o-Alaikum%20NAQSH!%20Mujhe%20Perfume%20order%20karna%20hai%20-%20Rs%202999%20(COD)" target="_blank" style="text-decoration:none;"><button class="btn-buy">BUY NOW</button></a></div></div></div>
+    <!-- 3 -->
+    <div class="col-md-4"><div class="card"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800"><div class="p-4"><span class="badge-tag">♛ CLASSIC</span><span style="float:right;color:green;font-size:12px;font-weight:700;">● In Stock</span><h4 class="mt-2">NAQSH Classic Watch</h4><div class="stars">★★★★★ <span style="color:#777;font-size:12px;">(189)</span></div><p style="font-size:13px;color:#777;">Premium Steel Chain • Water Resistant • Gift Box</p><p><span class="price">Rs 3,499</span> <span class="old-price">Rs 5,500</span></p><p style="font-size:12px;color:#1B5E20;font-weight:600;">💵 Cash on Delivery</p><a href="https://wa.me/923128845987?text=Assalam-o-Alaikum%20NAQSH!%20Mujhe%20Classic%20Watch%20order%20karni%20hai%20-%20Rs%203499%20(COD)" target="_blank" style="text-decoration:none;"><button class="btn-buy">BUY NOW</button></a></div></div></div>
+    <!-- 4 -->
+    <div class="col-md-4"><div class="card"><img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800"><div class="p-4"><span class="badge-tag">🔥 TRENDING</span><span style="float:right;color:green;font-size:12px;font-weight:700;">● In Stock</span><h4 class="mt-2">NAQSH Air Buds Pro</h4><div class="stars">★★★★★ <span style="color:#777;font-size:12px;">(412)</span></div><p style="font-size:13px;color:#777;">Wireless • Noise Cancellation • 24H Battery • Mic</p><p><span class="price">Rs 2,499</span> <span class="old-price">Rs 4,000</span></p><p style="font-size:12px;color:#1B5E20;font-weight:600;">💵 Cash on Delivery</p><a href="https://wa.me/923128845987?text=Assalam-o-Alaikum%20NAQSH!%20Mujhe%20Air%20Buds%20order%20karne%20hain%20-%20Rs%202499%20(COD)" target="_blank" style="text-decoration:none;"><button class="btn-buy">BUY NOW</button></a></div></div></div>
+    <!-- 5 -->
+    <div class="col-md-4"><div class="card"><img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800"><div class="p-4"><span class="badge-tag">😎 STYLISH</span><span style="float:right;color:green;font-size:12px;font-weight:700;">● In Stock</span><h4 class="mt-2">NAQSH Sunglasses</h4><div class="stars">★★★★★ <span style="color:#777;font-size:12px;">(156)</span></div><p style="font-size:13px;color:#777;">UV Protection • Premium Frame • Stylish Look</p><p><span class="price">Rs 1,999</span> <span class="old-price">Rs 3,200</span></p><p style="font-size:12px;color:#1B5E20;font-weight:600;">💵 Cash on Delivery</p><a href="https://wa.me/923128845987?text=Assalam-o-Alaikum%20NAQSH!%20Mujhe%20Sunglasses%20order%20karne%20hain%20-%20Rs%201999%20(COD)" target="_blank" style="text-decoration:none;"><button class="btn-buy">BUY NOW</button></a></div></div></div>
+    <!-- 6 -->
+    <div class="col-md-4"><div class="card"><img src="https://images.unsplash.com/photo-1627123424574-724758594e93?w=800"><div class="p-4"><span class="badge-tag">✦ PREMIUM</span><span style="float:right;color:green;font-size:12px;font-weight:700;">● In Stock</span><h4 class="mt-2">NAQSH Leather Wallet</h4><div class="stars">★★★★★ <span style="color:#777;font-size:12px;">(98)</span></div><p style="font-size:13px;color:#777;">Pure Leather • 8 Card Slots • Premium Quality</p><p><span class="price">Rs 1,499</span> <span class="old-price">Rs 2,500</span></p><p style="font-size:12px;color:#1B5E20;font-weight:600;">💵 Cash on Delivery</p><a href="https://wa.me/923128845987?text=Assalam-o-Alaikum%20NAQSH!%20Mujhe%20Wallet%20order%20karna%20hai%20-%20Rs%201499%20(COD)" target="_blank" style="text-decoration:none;"><button class="btn-buy">BUY NOW</button></a></div></div></div>
+    <!-- 7 -->
+    <div class="col-md-4"><div class="card"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800"><div class="p-4"><span class="badge-tag">👟 HOT</span><span style="float:right;color:green;font-size:12px;font-weight:700;">● In Stock</span><h4 class="mt-2">NAQSH Sneakers</h4><div class="stars">★★★★★ <span style="color:#777;font-size:12px;">(267)</span></div><p style="font-size:13px;color:#777;">Comfortable • Light Weight • All Sizes Available</p><p><span class="price">Rs 4,999</span> <span class="old-price">Rs 7,500</span></p><p style="font-size:12px;color:#1B5E20;font-weight:600;">💵 Cash on Delivery</p><a href="https://wa.me/923128845987?text=Assalam-o-Alaikum%20NAQSH!%20Mujhe%20Sneakers%20order%20karne%20hain%20-%20Rs%204999%20(COD)" target="_blank" style="text-decoration:none;"><button class="btn-buy">BUY NOW</button></a></div></div></div>
+    <!-- 8 -->
+    <div class="col-md-4"><div class="card"><img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800"><div class="p-4"><span class="badge-tag">🧥 WINTER</span><span style="float:right;color:green;font-size:12px;font-weight:700;">● In Stock</span><h4 class="mt-2">NAQSH Hoodie</h4><div class="stars">★★★★★ <span style="color:#777;font-size:12px;">(178)</span></div><p style="font-size:13px;color:#777;">Warm Fleece • Premium Fabric • All Colors</p><p><span class="price">Rs 2,799</span> <span class="old-price">Rs 4,200</span></p><p style="font-size:12px;color:#1B5E20;font-weight:600;">💵 Cash on Delivery</p><a href="https://wa.me/923128845987?text=Assalam-o-Alaikum%20NAQSH!%20Mujhe%20Hoodie%20order%20karni%20hai%20-%20Rs%202799%20(COD)" target="_blank" style="text-decoration:none;"><button class="btn-buy">BUY NOW</button></a></div></div></div>
+    <!-- 9 -->
+    <div class="col-md-4"><div class="card"><img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800"><div class="p-4"><span class="badge-tag">💎 FOR HER</span><span style="float:right;color:green;font-size:12px;font-weight:700;">● In Stock</span><h4 class="mt-2">NAQSH Ladies Watch</h4><div class="stars">★★★★★ <span style="color:#777;font-size:12px;">(203)</span></div><p style="font-size:13px;color:#777;">Elegant Design • Rose Gold • Gift Box Ke Saath</p><p><span class="price">Rs 3,299</span> <span class="old-price">Rs 5,000</span></p><p style="font-size:12px;color:#1B5E20;font-weight:600;">💵 Cash on Delivery</p><a href="https://wa.me/923128845987?text=Assalam-o-Alaikum%20NAQSH!%20Mujhe%20Ladies%20Watch%20order%20karni%20hai%20-%20Rs%203299%20(COD)" target="_blank" style="text-decoration:none;"><button class="btn-buy">BUY NOW</button></a></div></div></div>
+  </div>
+
+  <div class="text-center mt-5 p-4" style="background:#fff;border-radius:20px;">
+    <h5>💵 Payment Method</h5>
+    <p><b>Cash on Delivery</b> - Pehle paise nahi dene, jab parcel aaye tab paise dein.</p>
+    <a href="https://wa.me/923128845987?text=Assalam-o-Alaikum%20NAQSH!%20Mujhe%20order%20karna%20hai" target="_blank"><button class="btn-buy" style="max-width:320px;">ORDER ON WHATSAPP</button></a>
+  </div>
+
+  <h4 class="text-center mt-5">Log NAQSH Ke Baare Mein Kya Kehte Hain?</h4>
+  <div class="row g-3 mt-2 mb-4">
+    <div class="col-md-4"><div class="review-box"><div class="stars">★★★★★</div><p>"Watch ki quality ne dil jeet liya, bilkul picture jaisi aayi."</p><b>- Ahmed, Karachi</b></div></div>
+    <div class="col-md-4"><div class="review-box"><div class="stars">★★★★★</div><p>"Perfume ki khushboo bohat achi hai, 2 din tak kapron mein rehti hai."</p><b>- Ayesha, Lahore</b></div></div>
+    <div class="col-md-4"><div class="review-box"><div class="stars">★★★★★</div><p>"Order 2 din mein aa gaya. Trusted store hai."</p><b>- Bilal, Islamabad</b></div></div>
+  </div>
+</div>
+
+<a href="https://wa.me/923128845987?text=Assalam-o-Alaikum%20NAQSH!" target="_blank" class="float-wa">💬</a>
+<div class="footer"><b>NAQSH</b><br>Har Cheez Mein Ek Naqsh Hai<br><span style="font-size:12px;">© 2026 NAQSH • Payment: Cash on Delivery • WhatsApp: 0312-8845987</span></div>
+</body>
+</html>
