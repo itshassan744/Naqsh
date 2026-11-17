@@ -37,16 +37,16 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:15px 2
 .card-body p{font-size:12px;color:#777;margin-bottom:8px}
 .price{font-size:17px;font-weight:800}
 .old{font-size:12px;color:#999;text-decoration:line-through;margin-left:5px}
-.order-btn{display:block;background:#000;color:#fff;text-align:center;padding:12px;border-radius:10px;text-decoration:none;font-weight:700;margin-top:12px;font-size:13px}
+.order-btn{display:block;background:#000;color:#fff;text-align:center;padding:12px;border-radius:10px;text-decoration:none;font-weight:700;margin-top:12px;font-size:13px;cursor:pointer;border:none;width:100%}
 .trust{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:20px}
 .trust div{background:#fff;padding:14px 18px;border-radius:14px;text-align:center;flex:1;min-width:140px;box-shadow:0 3px 12px rgba(0,0,0,.05)}
 .trust b{font-size:13px}.trust p{font-size:11px;color:#777;margin-top:4px}
-.order-box{background:#fff;max-width:500px;margin:20px auto;padding:28px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.08);text-align:center}
+.order-box{background:#fff;max-width:500px;margin:20px auto;padding:28px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.08);text-align:center;border:2px solid #C9A227}
 .order-box h2{font-family:'Playfair Display',serif;font-size:26px}
 .order-box p{color:#777;font-size:13px;margin:8px 0 18px}
 .order-box input,.order-box select{width:100%;padding:14px;margin:8px 0;border-radius:12px;border:1px solid #ddd;font-size:14px;background:#FBF9F4}
-.order-box button{width:100%;padding:16px;background:#000;color:#fff;border:none;border-radius:12px;font-size:16px;font-weight:700;cursor:pointer;margin-top:10px}
-.order-box button:hover{background:#C9A227;color:#000}
+.order-box button.submit-btn{width:100%;padding:16px;background:#000;color:#fff;border:none;border-radius:12px;font-size:16px;font-weight:700;cursor:pointer;margin-top:10px}
+.selected-msg{display:none;background:#FFF3CD;padding:10px;border-radius:10px;font-size:13px;font-weight:700;margin-bottom:10px}
 .note{font-size:12px;color:#888;margin-top:10px}
 footer{background:#111;color:#fff;text-align:center;padding:30px 20px;margin-top:20px}
 footer h3{font-family:'Playfair Display',serif;letter-spacing:3px;font-size:22px}
@@ -74,55 +74,47 @@ footer p{color:#aaa;font-size:12px;margin-top:8px;line-height:1.6}
 
 <div class="section" id="products">
 <h2>Best Seller Collection - 8 Products</h2>
-<p class="sub">Watches & Perfumes - Sab se zyada pasand kiye janay walay</p>
+<p class="sub">Kisi bhi product par BUY NOW dabao, form khul jayega</p>
 <div class="grid">
 
-<!-- PRODUCT 1 -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600" alt="Watch">
-<div class="card-body"><span class="badge">🔥 BEST SELLER</span><h3>NAQSH Classic Watch</h3><p>Premium Steel • Water Resistant</p><div class="price">Rs. 3,500 <span class="old">Rs. 5,000</span></div><a href="#order" class="order-btn">Order This →</a></div>
+<img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600">
+<div class="card-body"><span class="badge">🔥 BEST SELLER</span><h3>NAQSH Classic Watch</h3><p>Premium Steel • Water Resistant</p><div class="price">Rs. 3,500 <span class="old">Rs. 5,000</span></div><button class="order-btn" onclick="buyNow('NAQSH Classic Watch - Rs.3500','Classic Watch')">BUY NOW →</button></div>
 </div>
 
-<!-- PRODUCT 2 -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600" alt="Watch">
-<div class="card-body"><span class="badge">NEW</span><h3>NAQSH Royal Black Watch</h3><p>Luxury Look • Premium Dial</p><div class="price">Rs. 4,200 <span class="old">Rs. 6,000</span></div><a href="#order" class="order-btn">Order This →</a></div>
+<img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600">
+<div class="card-body"><span class="badge">NEW</span><h3>NAQSH Royal Black Watch</h3><p>Luxury Look • Premium Dial</p><div class="price">Rs. 4,200 <span class="old">Rs. 6,000</span></div><button class="order-btn" onclick="buyNow('NAQSH Royal Black Watch - Rs.4200','Royal Black Watch')">BUY NOW →</button></div>
 </div>
 
-<!-- PRODUCT 3 -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=600" alt="Watch">
-<div class="card-body"><span class="badge">PREMIUM</span><h3>NAQSH Gold Edition Watch</h3><p>Golden Chain • Elegant Style</p><div class="price">Rs. 5,500 <span class="old">Rs. 7,500</span></div><a href="#order" class="order-btn">Order This →</a></div>
+<img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=600">
+<div class="card-body"><span class="badge">PREMIUM</span><h3>NAQSH Gold Edition Watch</h3><p>Golden Chain • Elegant Style</p><div class="price">Rs. 5,500 <span class="old">Rs. 7,500</span></div><button class="order-btn" onclick="buyNow('NAQSH Gold Edition Watch - Rs.5500','Gold Edition Watch')">BUY NOW →</button></div>
 </div>
 
-<!-- PRODUCT 4 -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1622434641406-a158123450f9?w=600" alt="Watch">
-<div class="card-body"><span class="badge">HOT</span><h3>NAQSH Sports Watch</h3><p>Digital + Analog • Stylish</p><div class="price">Rs. 2,999 <span class="old">Rs. 4,500</span></div><a href="#order" class="order-btn">Order This →</a></div>
+<img src="https://images.unsplash.com/photo-1622434641406-a158123450f9?w=600">
+<div class="card-body"><span class="badge">HOT</span><h3>NAQSH Sports Watch</h3><p>Digital + Analog • Stylish</p><div class="price">Rs. 2,999 <span class="old">Rs. 4,500</span></div><button class="order-btn" onclick="buyNow('NAQSH Sports Watch - Rs.2999','Sports Watch')">BUY NOW →</button></div>
 </div>
 
-<!-- PRODUCT 5 -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=600" alt="Perfume">
-<div class="card-body"><span class="badge">🔥 BEST SELLER</span><h3>NAQSH Oud Perfume</h3><p>Long Lasting • 100ml</p><div class="price">Rs. 2,500 <span class="old">Rs. 3,500</span></div><a href="#order" class="order-btn">Order This →</a></div>
+<img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=600">
+<div class="card-body"><span class="badge">🔥 BEST SELLER</span><h3>NAQSH Oud Perfume</h3><p>Long Lasting • 100ml</p><div class="price">Rs. 2,500 <span class="old">Rs. 3,500</span></div><button class="order-btn" onclick="buyNow('NAQSH Oud Perfume - Rs.2500','Oud Perfume')">BUY NOW →</button></div>
 </div>
 
-<!-- PRODUCT 6 -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=600" alt="Perfume">
-<div class="card-body"><span class="badge">PREMIUM</span><h3>NAQSH Gold Perfume</h3><p>Soft & Royal Fragrance • 100ml</p><div class="price">Rs. 2,999 <span class="old">Rs. 4,200</span></div><a href="#order" class="order-btn">Order This →</a></div>
+<img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=600">
+<div class="card-body"><span class="badge">PREMIUM</span><h3>NAQSH Gold Perfume</h3><p>Soft & Royal Fragrance • 100ml</p><div class="price">Rs. 2,999 <span class="old">Rs. 4,200</span></div><button class="order-btn" onclick="buyNow('NAQSH Gold Perfume - Rs.2999','Gold Perfume')">BUY NOW →</button></div>
 </div>
 
-<!-- PRODUCT 7 -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=600" alt="Perfume">
-<div class="card-body"><span class="badge">NEW</span><h3>NAQSH Rose Perfume</h3><p>Sweet Rose • Daily Use • 100ml</p><div class="price">Rs. 1,999 <span class="old">Rs. 2,800</span></div><a href="#order" class="order-btn">Order This →</a></div>
+<img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=600">
+<div class="card-body"><span class="badge">NEW</span><h3>NAQSH Rose Perfume</h3><p>Sweet Rose • Daily Use • 100ml</p><div class="price">Rs. 1,999 <span class="old">Rs. 2,800</span></div><button class="order-btn" onclick="buyNow('NAQSH Rose Perfume - Rs.1999','Rose Perfume')">BUY NOW →</button></div>
 </div>
 
-<!-- PRODUCT 8 -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1610461888750-10bfc601b874?w=600" alt="Perfume">
-<div class="card-body"><span class="badge">LUXURY</span><h3>NAQSH Royal Musk Perfume</h3><p>Strong & Long Lasting • 100ml</p><div class="price">Rs. 3,200 <span class="old">Rs. 4,500</span></div><a href="#order" class="order-btn">Order This →</a></div>
+<img src="https://images.unsplash.com/photo-1610461888750-10bfc601b874?w=600">
+<div class="card-body"><span class="badge">LUXURY</span><h3>NAQSH Royal Musk Perfume</h3><p>Strong & Long Lasting • 100ml</p><div class="price">Rs. 3,200 <span class="old">Rs. 4,500</span></div><button class="order-btn" onclick="buyNow('NAQSH Royal Musk Perfume - Rs.3200','Royal Musk Perfume')">BUY NOW →</button></div>
 </div>
 
 </div>
@@ -137,9 +129,10 @@ footer p{color:#aaa;font-size:12px;margin-top:8px;line-height:1.6}
 <div class="section">
 <div class="order-box" id="order">
 <h2>Website Par Order Karein</h2>
-<p>Form bharein, order seedha hum tak pahunch jayega. WhatsApp ki zaroorat nahi!</p>
+<p>Form bharein, order seedha hum tak pahunch jayega.</p>
+<div id="selectedMsg" class="selected-msg">✅ Aap ne select kiya: <span id="selectedName"></span></div>
 <form action="https://formsubmit.co/decentboy7444@gmail.com" method="POST">
-<select name="Product" required>
+<select id="productSelect" name="Product" required>
 <option value="">-- Konsa Product Chahiye? --</option>
 <option value="NAQSH Classic Watch - Rs.3500">1. Classic Watch - Rs. 3,500</option>
 <option value="NAQSH Royal Black Watch - Rs.4200">2. Royal Black Watch - Rs. 4,200</option>
@@ -158,7 +151,7 @@ footer p{color:#aaa;font-size:12px;margin-top:8px;line-height:1.6}
 <input type="hidden" name="_captcha" value="false">
 <input type="hidden" name="_subject" value="NAQSH - New Order Aaya Hai!">
 <input type="hidden" name="_template" value="table">
-<button type="submit">Order Pakka Karein →</button>
+<button type="submit" class="submit-btn">Order Pakka Karein →</button>
 </form>
 <p class="note">Cash on Delivery Available • Aap ka number private rahega</p>
 </div>
@@ -169,6 +162,16 @@ footer p{color:#aaa;font-size:12px;margin-top:8px;line-height:1.6}
 <p>Har Cheez Mein Ek Naqsh Hai.<br>Karachi, Pakistan<br>Email: decentboy7444@gmail.com</p>
 <p>© 2026 NAQSH - All Rights Reserved</p>
 </footer>
+
+<script>
+function buyNow(value, name){
+  var sel = document.getElementById('productSelect');
+  sel.value = value;
+  document.getElementById('selectedName').innerText = name;
+  document.getElementById('selectedMsg').style.display = 'block';
+  document.getElementById('order').scrollIntoView({behavior:'smooth'});
+}
+</script>
 
 </body>
 </html>
